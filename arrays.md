@@ -1,6 +1,8 @@
 # 📦 Arrays in C++ — From Fundamentals to Interview-Ready Basics
 
-![Arrays in C++](assets/banner.svg)
+<p align="center">
+  <img src="assets/banner.svg" alt="Arrays in C++" width="800">
+</p>
 
 > **For:** Students learning Data Structures and Algorithms (DSA) with C++  
 > **Goal:** Understand arrays, their memory layout, C++ implementations, common operations, and complexity.
