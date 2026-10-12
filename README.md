@@ -1,4 +1,4 @@
-![C++ DSA Notes](assets/banner.svg)
+![C++ DSA Notes](assets/dsa-banner.svg)
 
 # 📚 cpp-dsa-notes
 
