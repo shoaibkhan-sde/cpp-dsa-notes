@@ -1,5 +1,7 @@
 # 📦 Arrays in C++ — From Fundamentals to Interview-Ready Basics
 
+![Arrays in C++](assets/banner.svg)
+
 > **For:** Students learning Data Structures and Algorithms (DSA) with C++  
 > **Goal:** Understand arrays, their memory layout, C++ implementations, common operations, and complexity.
 
@@ -23,12 +25,19 @@ int arr[5] = {10, 20, 30, 40, 50};
 
 ### Illustration: index versus value
 
+![Animated index versus value](assets/index-value.svg)
+
+<details>
+<summary>Text version of this diagram</summary>
+
 ```text
 Index:      0       1       2       3       4
          +-------+-------+-------+-------+-------+
 Value:   |  10   |  20   |  30   |  40   |  50   |
          +-------+-------+-------+-------+-------+
 ```
+
+</details>
 
 ```cpp
 std::cout << arr[0]; // 10
@@ -43,6 +52,11 @@ Array elements are contiguous: one element follows the previous element in memor
 
 Assume, for illustration, that `sizeof(int) == 4` and the first element starts at address `1000`:
 
+![Animated memory layout](assets/memory-layout.svg)
+
+<details>
+<summary>Text version of this diagram</summary>
+
 ```text
 Illustrative addresses (not real addresses from your computer)
 
@@ -51,6 +65,8 @@ Address:   1000       1004       1008       1012       1016
 Element: | arr[0]=10| arr[1]=20| arr[2]=30| arr[3]=40| arr[4]=50|
          +----------+----------+----------+----------+----------+
 ```
+
+</details>
 
 Conceptually:
 
@@ -63,6 +79,9 @@ For the illustrative example, `arr[3]` is at `1000 + 3 × 4 = 1012`.
 That is why indexed access is **O(1)**: the element's location can be calculated directly. The address numbers are illustrative; `sizeof(int)` is implementation-dependent.
 
 ## 3. Array types in C++
+
+![Built-in array vs std::array vs std::vector](assets/array-types.svg)
+
 
 ### A. Built-in array — fixed size
 
@@ -110,6 +129,9 @@ int main() {
 }
 ```
 
+![Animated push_back and pop_back](assets/vector-push-pop.svg)
+
+
 - Can grow or shrink at runtime.
 - Stores elements contiguously.
 - Supports O(1) indexed access.
@@ -129,6 +151,9 @@ std::cout << v.capacity(); // at least 3; exact value varies
 
 Do not rely on a particular capacity growth factor; the C++ standard does not prescribe one.
 
+![Animated size versus capacity](assets/size-capacity.svg)
+
+
 ## 4. Core array operations
 
 ### A. Traversal — visit every element
@@ -141,6 +166,9 @@ for (int i = 0; i < 5; ++i) {
 }
 // Output: 10 20 30 40 50
 ```
+
+![Animated traversal](assets/traversal.svg)
+
 
 **Time:** O(n) | **Auxiliary space:** O(1)
 
@@ -158,6 +186,9 @@ for (int value : values) {
 int value = arr[2]; // 30
 ```
 
+![Animated access](assets/access.svg)
+
+
 **Time:** O(1) | **Auxiliary space:** O(1)
 
 ### C. Update — replace an element
@@ -166,6 +197,9 @@ int value = arr[2]; // 30
 arr[2] = 99;
 // [10, 20, 99, 40, 50]
 ```
+
+![Animated update](assets/update.svg)
+
 
 **Time:** O(1)
 
@@ -186,6 +220,9 @@ for (int i = 0; i < 5; ++i) {
 // If found, index stores its position; otherwise it remains -1.
 ```
 
+![Animated linear search](assets/linear-search.svg)
+
+
 - Best case: O(1), when the first element matches.
 - Worst case: O(n), when the value is last or absent.
 - Auxiliary space: O(1).
@@ -196,11 +233,18 @@ For sorted data, binary search can find a value in O(log n). Binary search is an
 
 Insert `25` at index `2`:
 
+![Animated insertion](assets/insertion.svg)
+
+<details>
+<summary>Text version of this diagram</summary>
+
 ```text
 Before: [10, 20, 30, 40, 50]
                       ↓ insert 25 at index 2
 After:  [10, 20, 25, 30, 40, 50]
 ```
+
+</details>
 
 ```cpp
 std::vector<int> v{10, 20, 30, 40, 50};
@@ -213,11 +257,18 @@ Insertion at the beginning or middle is **O(n)** because elements may need to sh
 
 Remove the element at index `2`:
 
+![Animated deletion](assets/deletion.svg)
+
+<details>
+<summary>Text version of this diagram</summary>
+
 ```text
 Before: [10, 20, 30, 40, 50]
                       ✕
 After:  [10, 20, 40, 50]
 ```
+
+</details>
 
 ```cpp
 std::vector<int> v{10, 20, 30, 40, 50};
@@ -248,6 +299,9 @@ Most `push_back()` calls use already allocated capacity, so they are constant ti
 
 Across a long sequence of appends, the average cost per append is O(1): **amortized O(1)**.
 
+![Animated amortized cost chart](assets/amortized-append.svg)
+
+
 **Space versus auxiliary space**
 - Storing `n` elements takes O(n) space.
 - Traversing an existing array with a simple loop uses O(1) auxiliary space.
@@ -269,6 +323,9 @@ Across a long sequence of appends, the average cost per append is O(1): **amorti
 - Vector reallocation can invalidate pointers, references, and iterators to its elements.
 
 If a vector reallocates, do not keep using pointers, references, or iterators obtained before that reallocation.
+
+![Animated iterator invalidation](assets/iterator-invalidation.svg)
+
 
 ## 7. Real-world examples
 
@@ -328,6 +385,11 @@ int matrix[2][3] = {
 std::cout << matrix[1][2]; // 6
 ```
 
+![Animated 2D array and row-major layout](assets/two-d-array.svg)
+
+<details>
+<summary>Text version of this diagram</summary>
+
 ```text
              Column
              0   1   2
@@ -337,6 +399,8 @@ Row 0      | 1 | 2 | 3 |
 Row 1      | 4 | 5 | 6 |
            +---+---+---+
 ```
+
+</details>
 
 - `matrix[0][1]` is `2`; `matrix[1][2]` is `6`.
 - Built-in multidimensional arrays use **row-major order** in C++: each row's elements are contiguous, and rows follow one another.
