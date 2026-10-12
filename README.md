@@ -1,6 +1,8 @@
-![C++ DSA Notes](assets/dsa-banner.svg)
+<p align="center">
+  <img src="dsa-banner.svg" alt="C++ DSA Notes" width="800">
+</p>
 
-# 📚 cpp-dsa-notes
+<h1 align="center">📚 cpp-dsa-notes</h1>
 
 Beginner-friendly **Data Structures and Algorithms (DSA) notes in C++**, written for students who want to understand the concepts first and then practise them until they can explain and implement them without looking at the notes.
 
