@@ -70,9 +70,7 @@ Element: | arr[0]=10| arr[1]=20| arr[2]=30| arr[3]=40| arr[4]=50|
 
 Conceptually:
 
-\[
-\text{address}(arr[i]) = \text{base address} + i \times \text{sizeof(element)}
-\]
+`address(arr[i]) = base address + i × sizeof(element)`
 
 For the illustrative example, `arr[3]` is at `1000 + 3 × 4 = 1012`.
 
@@ -487,4 +485,4 @@ In C++, choose among a built-in array, `std::array`, and `std::vector` based on 
 
 ---
 
-**Credits and scope:** These notes are an original, C++-focused learning resource informed by common DSA fundamentals and the author's study of the Zero To Mastery (ZTM) DSA cheat sheet. The explanations and examples have been adapted and expanded for C++ learners. Verify code against the compiler and C++ standard/library version you use.
+**Note:** These notes are created for students learning DSA with C++. Learn, practise, and keep growing! 🚀
