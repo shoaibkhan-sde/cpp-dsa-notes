@@ -240,7 +240,7 @@ Insert `25` at index `2`:
 
 ```text
 Before: [10, 20, 30, 40, 50]
-                      ↓ insert 25 at index 2
+                 ↓ insert 25 at index 2
 After:  [10, 20, 25, 30, 40, 50]
 ```
 
@@ -263,8 +263,9 @@ Remove the element at index `2`:
 <summary>Text version of this diagram</summary>
 
 ```text
+                 ✕
 Before: [10, 20, 30, 40, 50]
-                      ✕
+                     
 After:  [10, 20, 40, 50]
 ```
 
