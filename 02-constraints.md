@@ -1,3 +1,5 @@
+<p align="center"><a href="https://shoaibkhan-sde.github.io/cpp-dsa-notes/#constraints"><b>▶ Interactive version (pause, play, scrub)</b></a></p>
+
 <p align="center">
   <img src="assets/constraints-banner.svg" alt="Understanding Problem Constraints" width="800">
 </p>
