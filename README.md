@@ -1,3 +1,5 @@
+<p align="center"><a href="https://shoaibkhan-sde.github.io/cpp-dsa-notes/"><b>▶ Interactive version (pause, play, scrub)</b></a></p>
+
 <p align="center">
   <img src="assets/dsa-banner.svg" alt="C++ DSA Notes" width="800">
 </p>
@@ -13,15 +15,17 @@ Each chapter explains the idea in plain language, shows modern C++ code, and use
 | # | Topic | Status |
 |---|-------|--------|
 | 1 | [Arrays in C++](arrays.md) — memory layout, `std::array` vs `std::vector`, core operations, complexity | ✅ Available |
-| 2 | Strings | 🔜 Planned |
-| 3 | Linked Lists | 🔜 Planned |
-| 4 | Stacks and Queues | 🔜 Planned |
-| 5 | Hash Tables | 🔜 Planned |
-| 6 | Trees and Binary Search Trees | 🔜 Planned |
-| 7 | Heaps and Priority Queues | 🔜 Planned |
-| 8 | Graphs | 🔜 Planned |
-| 9 | Sorting and Searching | 🔜 Planned |
-| 10 | Recursion and Dynamic Programming | 🔜 Planned |
+| 2 | [Understanding Constraints](02-constraints.md) — reading `n`, value limits, time, memory, overflow | ✅ Available |
+| 3 | Strings | 🔜 Planned |
+| 4 | Linked Lists | 🔜 Planned |
+| 5 | Stacks and Queues | 🔜 Planned |
+| 6 | Hash Tables | 🔜 Planned |
+| 7 | Trees and Binary Search Trees | 🔜 Planned |
+| 8 | Heaps and Priority Queues | 🔜 Planned |
+| 9 | Graphs | 🔜 Planned |
+| 10 | Sorting and Searching | 🔜 Planned |
+| 11 | Recursion and Dynamic Programming | 🔜 Planned |
+
 
 > The planned list may change as the notes grow.
 
@@ -55,9 +59,10 @@ Verify code against the compiler and C++ standard version you use.
 
 ```text
 cpp-dsa-notes/
-├── README.md        # this file
-├── arrays.md        # Chapter 1: Arrays
-└── assets/          # animated SVG diagrams used by the chapters
+├── README.md             # this file
+├── 01-arrays.md          # Chapter 1: Arrays
+├── 02-constraints.md     # Chapter 2: Understanding Constraints
+└── assets/               # animated SVG diagrams used by the chapters
 ```
 
 ## 🤝 Feedback
