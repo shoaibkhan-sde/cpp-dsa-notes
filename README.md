@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="dsa-banner.svg" alt="C++ DSA Notes" width="800">
+  <img src="assets/dsa-banner.svg" alt="C++ DSA Notes" width="800">
 </p>
 
 <h1 align="center">📚 cpp-dsa-notes</h1>
