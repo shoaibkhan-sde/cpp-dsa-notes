@@ -1,3 +1,5 @@
+<p align="center"><a href="https://shoaibkhan-sde.github.io/cpp-dsa-notes/#arrays"><b>▶ Interactive version (pause, play, scrub)</b></a></p>
+
 # 📦 Arrays in C++ — From Fundamentals to Interview-Ready Basics
 
 <p align="center">
