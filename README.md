@@ -1,5 +1,3 @@
-<p align="center"><a href="https://shoaibkhan-sde.github.io/cpp-dsa-notes/"><b>▶ Interactive version (pause, play, scrub)</b></a></p>
-
 <p align="center">
   <img src="assets/dsa-banner.svg" alt="C++ DSA Notes" width="800">
 </p>
